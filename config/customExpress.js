@@ -9,7 +9,7 @@ module.exports = () => {
     app.use(bodyParser.json())
 
     consign()
-        .include('controllers')
+        .include('routers')
         .into(app)
 
     return app
