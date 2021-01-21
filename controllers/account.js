@@ -82,7 +82,7 @@ class Contas {
                                     res.status(400).json(erro)
                                 }
                             })
-                            res.status(201).json(response)
+                            res.status(201).json("sucesso")
                         }
                     })
                 } else {
@@ -100,7 +100,7 @@ class Contas {
             if (erro) {
                 res.status(400).json(erro)
             } else {
-                res.status(200).json(id)
+                res.status(200).json("sucesso")
             }
         })
     }
